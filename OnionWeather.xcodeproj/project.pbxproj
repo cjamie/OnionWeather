@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3CE0C9274E432C00AE0C0D /* PeopleListHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0C5274E432C00AE0C0D /* PeopleListHomeViewModel.swift */; };
+		7D3CE0CA274E432C00AE0C0D /* PeopleListHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0C7274E432C00AE0C0D /* PeopleListHomeController.swift */; };
+		7D3CE0CB274E432C00AE0C0D /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0C8274E432C00AE0C0D /* SubtitleTableViewCell.swift */; };
+		7D3CE0CE274E43AE00AE0C0D /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0CD274E43AE00AE0C0D /* HomeFactory.swift */; };
 		7D96ADDC274CEA6600917C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADDB274CEA6600917C08 /* AppDelegate.swift */; };
 		7D96ADDE274CEA6600917C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADDD274CEA6600917C08 /* SceneDelegate.swift */; };
-		7D96ADE0274CEA6600917C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADDF274CEA6600917C08 /* ViewController.swift */; };
-		7D96ADE3274CEA6600917C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D96ADE1274CEA6600917C08 /* Main.storyboard */; };
 		7D96ADE5274CEA6800917C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D96ADE4274CEA6800917C08 /* Assets.xcassets */; };
 		7D96ADE8274CEA6800917C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D96ADE6274CEA6800917C08 /* LaunchScreen.storyboard */; };
 		7D96ADF3274CEA6800917C08 /* OnionWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADF2274CEA6800917C08 /* OnionWeatherTests.swift */; };
 		7D96ADFE274CEA6800917C08 /* OnionWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADFD274CEA6800917C08 /* OnionWeatherUITests.swift */; };
+		7D96AE0D274CEBA200917C08 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7D96AE0C274CEBA200917C08 /* SnapKit */; };
+		7D96AE0F274CEC3400917C08 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE0E274CEC3400917C08 /* Utilities.swift */; };
+		7D96AE11274CEC6300917C08 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE10274CEC6300917C08 /* AppCoordinator.swift */; };
+		7D96AE15274CECB900917C08 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE14274CECB900917C08 /* Coordinator.swift */; };
+		7D96AE22274CF49900917C08 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE21274CF49900917C08 /* Endpoint.swift */; };
+		7D96AE25274CF4AC00917C08 /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE24274CF4AC00917C08 /* PersonDTO.swift */; };
+		7D96AE2A274D101900917C08 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE29274D101900917C08 /* Person.swift */; };
+		7D96AE2D274D161F00917C08 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE2C274D161F00917C08 /* UseCase.swift */; };
+		7D96AE2F274D307100917C08 /* PaginatedPeopleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE2E274D307100917C08 /* PaginatedPeopleUseCase.swift */; };
+		7D96AE31274D309700917C08 /* FetchPeopleListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE30274D309600917C08 /* FetchPeopleListUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D3CE0C5274E432C00AE0C0D /* PeopleListHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListHomeViewModel.swift; sourceTree = "<group>"; };
+		7D3CE0C7274E432C00AE0C0D /* PeopleListHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListHomeController.swift; sourceTree = "<group>"; };
+		7D3CE0C8274E432C00AE0C0D /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleTableViewCell.swift; sourceTree = "<group>"; };
+		7D3CE0CD274E43AE00AE0C0D /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		7D96ADD8274CEA6600917C08 /* OnionWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnionWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D96ADDB274CEA6600917C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D96ADDD274CEA6600917C08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D96ADDF274CEA6600917C08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D96ADE2274CEA6600917C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D96ADE4274CEA6800917C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D96ADE7274CEA6800917C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D96ADE9274CEA6800917C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +63,15 @@
 		7D96ADF9274CEA6800917C08 /* OnionWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnionWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D96ADFD274CEA6800917C08 /* OnionWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionWeatherUITests.swift; sourceTree = "<group>"; };
 		7D96ADFF274CEA6800917C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D96AE0E274CEC3400917C08 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7D96AE10274CEC6300917C08 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7D96AE14274CECB900917C08 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7D96AE21274CF49900917C08 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7D96AE24274CF4AC00917C08 /* PersonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTO.swift; sourceTree = "<group>"; };
+		7D96AE29274D101900917C08 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7D96AE2C274D161F00917C08 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		7D96AE2E274D307100917C08 /* PaginatedPeopleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedPeopleUseCase.swift; sourceTree = "<group>"; };
+		7D96AE30274D309600917C08 /* FetchPeopleListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPeopleListUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D96AE0D274CEBA200917C08 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D3CE0C3274E432C00AE0C0D /* People */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0C4274E432C00AE0C0D /* ViewModel */,
+				7D3CE0C6274E432C00AE0C0D /* View */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		7D3CE0C4274E432C00AE0C0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0C5274E432C00AE0C0D /* PeopleListHomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D3CE0C6274E432C00AE0C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0C7274E432C00AE0C0D /* PeopleListHomeController.swift */,
+				7D3CE0C8274E432C00AE0C0D /* SubtitleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D3CE0CC274E439A00AE0C0D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0CD274E43AE00AE0C0D /* HomeFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		7D96ADCF274CEA6600917C08 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +157,14 @@
 		7D96ADDA274CEA6600917C08 /* OnionWeather */ = {
 			isa = PBXGroup;
 			children = (
-				7D96ADDB274CEA6600917C08 /* AppDelegate.swift */,
-				7D96ADDD274CEA6600917C08 /* SceneDelegate.swift */,
-				7D96ADDF274CEA6600917C08 /* ViewController.swift */,
-				7D96ADE1274CEA6600917C08 /* Main.storyboard */,
-				7D96ADE4274CEA6800917C08 /* Assets.xcassets */,
+				7D96AE18274CEFEE00917C08 /* App */,
+				7D96AE20274CF47A00917C08 /* Data */,
+				7D96AE16274CEF1000917C08 /* Domain */,
+				7D96AE1D274CF10400917C08 /* Infrastructure */,
 				7D96ADE6274CEA6800917C08 /* LaunchScreen.storyboard */,
-				7D96ADE9274CEA6800917C08 /* Info.plist */,
+				7D96AE12274CEC6C00917C08 /* Navigation */,
+				7D96AE17274CEF1800917C08 /* Presentation */,
+				7D96AE0E274CEC3400917C08 /* Utilities.swift */,
 			);
 			path = OnionWeather;
 			sourceTree = "<group>";
@@ -128,6 +187,102 @@
 			path = OnionWeatherUITests;
 			sourceTree = "<group>";
 		};
+		7D96AE12274CEC6C00917C08 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE10274CEC6300917C08 /* AppCoordinator.swift */,
+				7D96AE14274CECB900917C08 /* Coordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		7D96AE16274CEF1000917C08 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE2B274D161500917C08 /* UseCase */,
+				7D96AE29274D101900917C08 /* Person.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7D96AE17274CEF1800917C08 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0C3274E432C00AE0C0D /* People */,
+				7D96AE1A274CF07600917C08 /* Detail */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7D96AE18274CEFEE00917C08 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0CC274E439A00AE0C0D /* Factory */,
+				7D96ADDB274CEA6600917C08 /* AppDelegate.swift */,
+				7D96ADDD274CEA6600917C08 /* SceneDelegate.swift */,
+				7D96ADE4274CEA6800917C08 /* Assets.xcassets */,
+				7D96ADE9274CEA6800917C08 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7D96AE1A274CF07600917C08 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7D96AE1D274CF10400917C08 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE32274D311E00917C08 /* Alamofire */,
+				7D96AE26274CF82A00917C08 /* Apollo */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		7D96AE20274CF47A00917C08 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE23274CF4A000917C08 /* DTOs */,
+				7D96AE21274CF49900917C08 /* Endpoint.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7D96AE23274CF4A000917C08 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE24274CF4AC00917C08 /* PersonDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		7D96AE26274CF82A00917C08 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		7D96AE2B274D161500917C08 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE2C274D161F00917C08 /* UseCase.swift */,
+				7D96AE2E274D307100917C08 /* PaginatedPeopleUseCase.swift */,
+				7D96AE30274D309600917C08 /* FetchPeopleListUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		7D96AE32274D311E00917C08 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +299,9 @@
 			dependencies = (
 			);
 			name = OnionWeather;
+			packageProductDependencies = (
+				7D96AE0C274CEBA200917C08 /* SnapKit */,
+			);
 			productName = OnionWeather;
 			productReference = 7D96ADD8274CEA6600917C08 /* OnionWeather.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +373,9 @@
 				Base,
 			);
 			mainGroup = 7D96ADCF274CEA6600917C08;
+			packageReferences = (
+				7D96AE0B274CEBA200917C08 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 7D96ADD9274CEA6600917C08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +394,6 @@
 			files = (
 				7D96ADE8274CEA6800917C08 /* LaunchScreen.storyboard in Resources */,
 				7D96ADE5274CEA6800917C08 /* Assets.xcassets in Resources */,
-				7D96ADE3274CEA6600917C08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +418,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D96ADE0274CEA6600917C08 /* ViewController.swift in Sources */,
+				7D96AE2A274D101900917C08 /* Person.swift in Sources */,
 				7D96ADDC274CEA6600917C08 /* AppDelegate.swift in Sources */,
+				7D96AE22274CF49900917C08 /* Endpoint.swift in Sources */,
+				7D96AE15274CECB900917C08 /* Coordinator.swift in Sources */,
+				7D96AE2D274D161F00917C08 /* UseCase.swift in Sources */,
+				7D3CE0CA274E432C00AE0C0D /* PeopleListHomeController.swift in Sources */,
+				7D96AE11274CEC6300917C08 /* AppCoordinator.swift in Sources */,
+				7D96AE31274D309700917C08 /* FetchPeopleListUseCase.swift in Sources */,
+				7D96AE0F274CEC3400917C08 /* Utilities.swift in Sources */,
 				7D96ADDE274CEA6600917C08 /* SceneDelegate.swift in Sources */,
+				7D3CE0CB274E432C00AE0C0D /* SubtitleTableViewCell.swift in Sources */,
+				7D3CE0CE274E43AE00AE0C0D /* HomeFactory.swift in Sources */,
+				7D96AE2F274D307100917C08 /* PaginatedPeopleUseCase.swift in Sources */,
+				7D3CE0C9274E432C00AE0C0D /* PeopleListHomeViewModel.swift in Sources */,
+				7D96AE25274CF4AC00917C08 /* PersonDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +468,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D96ADE1274CEA6600917C08 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D96ADE2274CEA6600917C08 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D96ADE6274CEA6800917C08 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +602,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RNF778SHGZ;
-				INFOPLIST_FILE = OnionWeather/Info.plist;
+				INFOPLIST_FILE = OnionWeather/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RNF778SHGZ;
-				INFOPLIST_FILE = OnionWeather/Info.plist;
+				INFOPLIST_FILE = OnionWeather/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,6 +757,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D96AE0B274CEBA200917C08 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D96AE0C274CEBA200917C08 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D96AE0B274CEBA200917C08 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D96ADD0274CEA6600917C08 /* Project object */;
 }
