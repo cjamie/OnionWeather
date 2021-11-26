@@ -57,12 +57,11 @@ extension PeopleListHomeController {
     }
     
     enum Cell: Hashable {
-        case person(PersonViewModel)
+        case person(PersonViewModelInputs)
     }
 }
 
 extension PeopleListHomeController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.outputs.selectedIndexPath.send(indexPath)
     }
@@ -74,8 +73,4 @@ extension PeopleListHomeController: UITableViewDelegate {
             viewModel.outputs.didScrollToBottom.send()
         }
     }
-}
-struct PersonViewModel: Hashable {
-    let headline: String
-    let detail: String
 }

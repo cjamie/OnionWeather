@@ -10,10 +10,19 @@ import Combine
 
 final class AppCoordinator: Coordinator {
     var children: [Coordinator]
-    let navigationController: UINavigationController
+
+    private(set) lazy var navigationController: UINavigationController = factory.makeNavigationController(
+        selectedPerson: selectedPerson,
+        onRedViewTapped: navigateToSearchOptionView(),
+        currentOption: selectedOption,
+        personDetailViewDismissal: personDetailViewDismissal
+    )
+
     private let factory: HomeFactory
     private let window: UIWindow
-    private let selectedPerson = PassthroughSubject<PersonViewModel, Never>()
+    private let selectedPerson = PassthroughSubject<PersonViewModelInputs, Never>()
+    private let selectedOption = CurrentValueSubject<String, Never>("people")
+    private let personDetailViewDismissal = PassthroughSubject<Void, Never>()
     private var cancelables: Set<AnyCancellable> = []
     
     func start() {
@@ -31,42 +40,26 @@ final class AppCoordinator: Coordinator {
         self.factory = factory
         self.children = []
         self.window = window
-        self.navigationController = factory.makeNavigationController(selectedPerson: selectedPerson)
     }
     
-    private func goToDetailView(person: PersonViewModel) {
-        navigationController.pushViewController(
-            factory.makePersonDetailView(viewModel: person),
+    private func goToDetailView(person: PersonViewModelInputs) {
+        navigationController.present(
+            factory.makePersonDetailView(viewModel: .init(
+                inputs: person,
+                outputs: .init(personDetailViewDismissal: personDetailViewDismissal)
+            )),
             animated: true
         )
     }
-}
-
-final class PersonDetailView: UIViewController {
-    private let viewModel: PersonViewModel
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .blue
-        
-        let mainLabel = UILabel()
-        mainLabel.textColor = .systemPink
-
-        view.addSubview(mainLabel)
-
-        mainLabel.snp.makeConstraints {
-            $0.centerX.centerY.equalToSuperview()
+    
+    private func navigateToSearchOptionView() -> () -> Void {
+        {
+            [weak self] in
+            guard let self = self else { return }
+            self.navigationController.present(
+                self.factory.makeSearchOptionView(selectedOption: self.selectedOption),
+                animated: true
+            )
         }
-        
-        mainLabel.text = viewModel.headline
-    }
-    
-    init(viewModel: PersonViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }

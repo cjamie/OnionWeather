@@ -10,36 +10,27 @@ import Foundation
 
 final class FetchPeopleListUseCase: UseCase {
     private var cancelable: AnyCancellable?
-    private let currentCursor:  CurrentValueSubject<URL?, Never>
-    private let peopleSnapshotRepository: PeopleSnapshotRepository
+    private let peopleSnapshotRepository: PeopleRepository
+    private let handleEvents: (PeopleList) -> Void
+    private let peopleListRepo: PeopleListRepository
 
     init(
-        peopleSnapshotRepository: PeopleSnapshotRepository,
-        currentCursor: CurrentValueSubject<URL?, Never>
+        peopleSnapshotRepository: PeopleRepository,
+        handleEvents: @escaping (PeopleList) -> Void,
+        peopleListRepo: PeopleListRepository
     ) {
         self.peopleSnapshotRepository = peopleSnapshotRepository
-        self.currentCursor = currentCursor
+        self.handleEvents = handleEvents
+        self.peopleListRepo = peopleListRepo
     }
     
     func start() {
-        cancelable = URLSession
-            .shared
-            .dataTaskPublisher(for: URLRequest(
-                url: URL(string: "https://swapi.dev/api/people")!,
-                cachePolicy: .returnCacheDataElseLoad,
-                timeoutInterval: 10
-            ))
-            .map(\.data)
-            .decode(type: PeopleListDTO.self, decoder: JSONDecoder())
-            .handleEvents(receiveOutput: { [weak self] in self?.currentCursor.send($0.next) })
-            .map(toSetOfPeople)
+        cancelable = peopleListRepo
+            .getPeopleList
+            .handleEvents(receiveOutput: { [weak self] in self?.handleEvents($0) })
             .sink(
                 receiveCompletion: { _ in },
-                receiveValue: { [weak self] in self?.peopleSnapshotRepository.setPeople($0) }
+                receiveValue: { [weak self] in self?.peopleSnapshotRepository.setPeople(Set($0.results)) }
             )
-    }
-    
-    private func toSetOfPeople(from: PeopleListDTO) -> Set<Person> {
-        from.results.reduce(into: []) { $0.insert(.init(from: $1)) }
     }
 }

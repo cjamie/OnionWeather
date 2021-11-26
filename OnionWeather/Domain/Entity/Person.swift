@@ -15,7 +15,9 @@ struct Person: Hashable {
     let skinColor: String
     let eyeColor: String
     let birthYear: String
+}
 
+extension Person {
     init(from dto: PersonDTO) {
         self.name = dto.name
         self.height = dto.height

@@ -11,6 +11,12 @@
 		7D3CE0CA274E432C00AE0C0D /* PeopleListHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0C7274E432C00AE0C0D /* PeopleListHomeController.swift */; };
 		7D3CE0CB274E432C00AE0C0D /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0C8274E432C00AE0C0D /* SubtitleTableViewCell.swift */; };
 		7D3CE0CE274E43AE00AE0C0D /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0CD274E43AE00AE0C0D /* HomeFactory.swift */; };
+		7D3CE0D02750458300AE0C0D /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0CF2750458300AE0C0D /* PersonDetailView.swift */; };
+		7D3CE0DA2751506A00AE0C0D /* SearchOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0D92751506A00AE0C0D /* SearchOptionView.swift */; };
+		7D3CE0DC2751509400AE0C0D /* SearchOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0DB2751509400AE0C0D /* SearchOptionViewModel.swift */; };
+		7D3CE0DF275154C700AE0C0D /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0DE275154C700AE0C0D /* PersonViewModel.swift */; };
+		7D3CE0E2275154FC00AE0C0D /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0E1275154FC00AE0C0D /* PeopleRepository.swift */; };
+		7D3CE0E42751641700AE0C0D /* ResetListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3CE0E32751641700AE0C0D /* ResetListUseCase.swift */; };
 		7D96ADDC274CEA6600917C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADDB274CEA6600917C08 /* AppDelegate.swift */; };
 		7D96ADDE274CEA6600917C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96ADDD274CEA6600917C08 /* SceneDelegate.swift */; };
 		7D96ADE5274CEA6800917C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D96ADE4274CEA6800917C08 /* Assets.xcassets */; };
@@ -21,12 +27,13 @@
 		7D96AE0F274CEC3400917C08 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE0E274CEC3400917C08 /* Utilities.swift */; };
 		7D96AE11274CEC6300917C08 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE10274CEC6300917C08 /* AppCoordinator.swift */; };
 		7D96AE15274CECB900917C08 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE14274CECB900917C08 /* Coordinator.swift */; };
-		7D96AE22274CF49900917C08 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE21274CF49900917C08 /* Endpoint.swift */; };
 		7D96AE25274CF4AC00917C08 /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE24274CF4AC00917C08 /* PersonDTO.swift */; };
 		7D96AE2A274D101900917C08 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE29274D101900917C08 /* Person.swift */; };
 		7D96AE2D274D161F00917C08 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE2C274D161F00917C08 /* UseCase.swift */; };
-		7D96AE2F274D307100917C08 /* PaginatedPeopleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE2E274D307100917C08 /* PaginatedPeopleUseCase.swift */; };
+		7D96AE2F274D307100917C08 /* PaginatePeopleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE2E274D307100917C08 /* PaginatePeopleUseCase.swift */; };
 		7D96AE31274D309700917C08 /* FetchPeopleListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AE30274D309600917C08 /* FetchPeopleListUseCase.swift */; };
+		7DD75F862754E569002D4BD5 /* PeopleListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75F852754E569002D4BD5 /* PeopleListRepository.swift */; };
+		7DD75F892754E6A7002D4BD5 /* PeopleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD75F882754E6A7002D4BD5 /* PeopleList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,12 @@
 		7D3CE0C7274E432C00AE0C0D /* PeopleListHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListHomeController.swift; sourceTree = "<group>"; };
 		7D3CE0C8274E432C00AE0C0D /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitleTableViewCell.swift; sourceTree = "<group>"; };
 		7D3CE0CD274E43AE00AE0C0D /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		7D3CE0CF2750458300AE0C0D /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		7D3CE0D92751506A00AE0C0D /* SearchOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionView.swift; sourceTree = "<group>"; };
+		7D3CE0DB2751509400AE0C0D /* SearchOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionViewModel.swift; sourceTree = "<group>"; };
+		7D3CE0DE275154C700AE0C0D /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		7D3CE0E1275154FC00AE0C0D /* PeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
+		7D3CE0E32751641700AE0C0D /* ResetListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetListUseCase.swift; sourceTree = "<group>"; };
 		7D96ADD8274CEA6600917C08 /* OnionWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnionWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D96ADDB274CEA6600917C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D96ADDD274CEA6600917C08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,12 +79,13 @@
 		7D96AE0E274CEC3400917C08 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7D96AE10274CEC6300917C08 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7D96AE14274CECB900917C08 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		7D96AE21274CF49900917C08 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7D96AE24274CF4AC00917C08 /* PersonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTO.swift; sourceTree = "<group>"; };
 		7D96AE29274D101900917C08 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7D96AE2C274D161F00917C08 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
-		7D96AE2E274D307100917C08 /* PaginatedPeopleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedPeopleUseCase.swift; sourceTree = "<group>"; };
+		7D96AE2E274D307100917C08 /* PaginatePeopleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatePeopleUseCase.swift; sourceTree = "<group>"; };
 		7D96AE30274D309600917C08 /* FetchPeopleListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPeopleListUseCase.swift; sourceTree = "<group>"; };
+		7DD75F852754E569002D4BD5 /* PeopleListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListRepository.swift; sourceTree = "<group>"; };
+		7DD75F882754E6A7002D4BD5 /* PeopleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +148,87 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		7D3CE0D12750458600AE0C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0CF2750458300AE0C0D /* PersonDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D3CE0D22751233400AE0C0D /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE24274CF4AC00917C08 /* PersonDTO.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		7D3CE0D32751436F00AE0C0D /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
+		7D3CE0D42751437500AE0C0D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		7D3CE0D52751441200AE0C0D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7D96AE29274D101900917C08 /* Person.swift */,
+				7DD75F882754E6A7002D4BD5 /* PeopleList.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7D3CE0D62751504400AE0C0D /* SearchOption */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0D82751505E00AE0C0D /* ViewModel */,
+				7D3CE0D72751505C00AE0C0D /* View */,
+			);
+			path = SearchOption;
+			sourceTree = "<group>";
+		};
+		7D3CE0D72751505C00AE0C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0D92751506A00AE0C0D /* SearchOptionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D3CE0D82751505E00AE0C0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0DB2751509400AE0C0D /* SearchOptionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D3CE0DD275154BD00AE0C0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0DE275154C700AE0C0D /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D3CE0E0275154F000AE0C0D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0E1275154FC00AE0C0D /* PeopleRepository.swift */,
+				7DD75F852754E569002D4BD5 /* PeopleListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		7D96ADCF274CEA6600917C08 = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				7D96AE18274CEFEE00917C08 /* App */,
-				7D96AE20274CF47A00917C08 /* Data */,
 				7D96AE16274CEF1000917C08 /* Domain */,
+				7DD75F872754E63D002D4BD5 /* Data */,
 				7D96AE1D274CF10400917C08 /* Infrastructure */,
 				7D96ADE6274CEA6800917C08 /* LaunchScreen.storyboard */,
 				7D96AE12274CEC6C00917C08 /* Navigation */,
@@ -199,8 +294,8 @@
 		7D96AE16274CEF1000917C08 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				7D3CE0D52751441200AE0C0D /* Entity */,
 				7D96AE2B274D161500917C08 /* UseCase */,
-				7D96AE29274D101900917C08 /* Person.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -208,6 +303,7 @@
 		7D96AE17274CEF1800917C08 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7D3CE0D62751504400AE0C0D /* SearchOption */,
 				7D3CE0C3274E432C00AE0C0D /* People */,
 				7D96AE1A274CF07600917C08 /* Detail */,
 			);
@@ -229,6 +325,8 @@
 		7D96AE1A274CF07600917C08 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				7D3CE0DD275154BD00AE0C0D /* ViewModel */,
+				7D3CE0D12750458600AE0C0D /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -236,25 +334,19 @@
 		7D96AE1D274CF10400917C08 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				7D96AE32274D311E00917C08 /* Alamofire */,
-				7D96AE26274CF82A00917C08 /* Apollo */,
+				7D96AE23274CF4A000917C08 /* DTOs */,
 			);
 			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		7D96AE20274CF47A00917C08 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				7D96AE23274CF4A000917C08 /* DTOs */,
-				7D96AE21274CF49900917C08 /* Endpoint.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		7D96AE23274CF4A000917C08 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				7D96AE24274CF4AC00917C08 /* PersonDTO.swift */,
+				7D3CE0D42751437500AE0C0D /* Firebase */,
+				7D3CE0D32751436F00AE0C0D /* Sockets */,
+				7D96AE26274CF82A00917C08 /* Apollo */,
+				7D96AE32274D311E00917C08 /* Alamofire */,
+				7D3CE0D22751233400AE0C0D /* Rest */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -270,8 +362,9 @@
 			isa = PBXGroup;
 			children = (
 				7D96AE2C274D161F00917C08 /* UseCase.swift */,
-				7D96AE2E274D307100917C08 /* PaginatedPeopleUseCase.swift */,
+				7D96AE2E274D307100917C08 /* PaginatePeopleUseCase.swift */,
 				7D96AE30274D309600917C08 /* FetchPeopleListUseCase.swift */,
+				7D3CE0E32751641700AE0C0D /* ResetListUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -281,6 +374,14 @@
 			children = (
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		7DD75F872754E63D002D4BD5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D3CE0E0275154F000AE0C0D /* Repositories */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,18 +521,25 @@
 			files = (
 				7D96AE2A274D101900917C08 /* Person.swift in Sources */,
 				7D96ADDC274CEA6600917C08 /* AppDelegate.swift in Sources */,
-				7D96AE22274CF49900917C08 /* Endpoint.swift in Sources */,
 				7D96AE15274CECB900917C08 /* Coordinator.swift in Sources */,
 				7D96AE2D274D161F00917C08 /* UseCase.swift in Sources */,
 				7D3CE0CA274E432C00AE0C0D /* PeopleListHomeController.swift in Sources */,
+				7D3CE0E2275154FC00AE0C0D /* PeopleRepository.swift in Sources */,
+				7D3CE0DA2751506A00AE0C0D /* SearchOptionView.swift in Sources */,
+				7D3CE0DC2751509400AE0C0D /* SearchOptionViewModel.swift in Sources */,
+				7D3CE0DF275154C700AE0C0D /* PersonViewModel.swift in Sources */,
+				7D3CE0D02750458300AE0C0D /* PersonDetailView.swift in Sources */,
 				7D96AE11274CEC6300917C08 /* AppCoordinator.swift in Sources */,
 				7D96AE31274D309700917C08 /* FetchPeopleListUseCase.swift in Sources */,
 				7D96AE0F274CEC3400917C08 /* Utilities.swift in Sources */,
 				7D96ADDE274CEA6600917C08 /* SceneDelegate.swift in Sources */,
+				7DD75F862754E569002D4BD5 /* PeopleListRepository.swift in Sources */,
 				7D3CE0CB274E432C00AE0C0D /* SubtitleTableViewCell.swift in Sources */,
 				7D3CE0CE274E43AE00AE0C0D /* HomeFactory.swift in Sources */,
-				7D96AE2F274D307100917C08 /* PaginatedPeopleUseCase.swift in Sources */,
+				7D96AE2F274D307100917C08 /* PaginatePeopleUseCase.swift in Sources */,
+				7D3CE0E42751641700AE0C0D /* ResetListUseCase.swift in Sources */,
 				7D3CE0C9274E432C00AE0C0D /* PeopleListHomeViewModel.swift in Sources */,
+				7DD75F892754E6A7002D4BD5 /* PeopleList.swift in Sources */,
 				7D96AE25274CF4AC00917C08 /* PersonDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
