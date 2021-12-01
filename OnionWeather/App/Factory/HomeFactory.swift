@@ -46,6 +46,7 @@ final class HomeFactory {
             .people
             .map(toSnapshot)
             .dropFirst()
+            .receive(on: DispatchQueue.main)
             .sink { source.apply($0) }
             .store(in: &cancellables)
 
